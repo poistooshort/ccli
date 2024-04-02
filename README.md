@@ -1,6 +1,6 @@
 # CCLI - Chrome Command Line Interface
 
 ## Description
-[skip](## Table of Contents)
+[skip](https://github.com/poistooshort/ccli?tab=readme-ov-file#table-of-contents)
 
 ## Table of Contents

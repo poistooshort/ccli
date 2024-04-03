@@ -9,5 +9,5 @@ Mainly, this project is to get myself coding in a public space. Secondly, it all
 ## Table of Contents
 
 ## To Do List
-- [ ] Add readme with a few items on to do list
+- [x] Add readme with a few items on to do list
 - [ ] Create a basic interface with a single test keyword function

@@ -1,12 +1,30 @@
-# CCLI - Chrome Command Line Interface
+# React + TypeScript + Vite
 
-## Description
-[skip this boring stuff](https://github.com/poistooshort/ccli?tab=readme-ov-file#table-of-contents)  
-CCLI is a chrome extension that brings command line style tools to the user at the press of a shortcut key / shortcut key combination.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Mainly, this project is to get myself coding in a public space. Secondly, it allows me to consolidate a bunch of random tools I have hacked together for personal use since I've started coding, into one project.
+Currently, two official plugins are available:
 
-## Table of Contents
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## To Do List
-- [x] Add readme with a few items on to do list
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

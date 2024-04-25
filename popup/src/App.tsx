@@ -11,7 +11,7 @@ function App() {
 
   const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
     e.preventDefault();
-    inputRef?.current.value = '';
+    if(inputRef) inputRef.current.value = '';
     if(command === 'test') console.log('test function working correctly');
     setCommand('');
   };

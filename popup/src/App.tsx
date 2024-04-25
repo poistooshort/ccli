@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 function App() {
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const [command, setCommand] = useState('');
 
   const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -9,9 +9,11 @@ function App() {
     setCommand(e.currentTarget.value);
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if(inputRef) inputRef.current.value = '';
+    if(inputRef.current) {
+      inputRef.current.value = '';
+    }
     if(command === 'test') console.log('test function working correctly');
     setCommand('');
   };

@@ -13,4 +13,4 @@ UPDATE: I am currently mainly focused on learning about Cybersecurity and trying
 ## To Do List
 - [x] Add readme with a few items on to do list
 - [x] Create simple ui for "command line"
-- [ ] Create a structure for recognized commands. // preliminary idea since my architecture skills is pretty low if any
+- [ ] Create a structure for recognized commands. // preliminary idea since my architecture skills are pretty low if any
